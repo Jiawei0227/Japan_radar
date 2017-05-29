@@ -17,11 +17,11 @@ class GetDataUtil(object):
 
     def getDataByYY_MM_DD_HH_MIN(self,yyyy,mm,dd,hh,min):
         re = os.system("sh data2grads.sh %s %s %s %s %s"%(yyyy,mm,dd,hh,min))
-        if re!=0:
+        if re != 0:
             raise Exception("Cannot get Data in this time or Permission Denied")
 
 
 
 if __name__ == '__main__':
     g = GetDataUtil()
-    g.getDataByYY_MM_DD_HH("2017","05","21","05")
+    g.getDataByYY_MM_DD_HH("2017","05","28","09")

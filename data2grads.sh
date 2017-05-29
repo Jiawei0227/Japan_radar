@@ -11,7 +11,7 @@ min=${5}
 
 input="Z__C_RJTD_${yyyy}${mm}${dd}${hh}${min}00_RDR_JMAGPV__grib2.tar"
 
-PDIR=${yyyy}/${mm}/${dd}
+PDIR=${yyyy}/${mm}/${dd}/${hh}
 
 mkdir -p $PDIR
 
@@ -30,3 +30,5 @@ mv -v *.bin $PDIR
 
 mkdir -p $PDIR/dat
 mv -v $PDIR/*.dat $PDIR/dat
+mv view_radar.ctl ${yyyy}${mm}${dd}${hh}${min}view_radar.ctl
+mv ${yyyy}${mm}${dd}${hh}${min}view_radar.ctl $PDIR/dat
