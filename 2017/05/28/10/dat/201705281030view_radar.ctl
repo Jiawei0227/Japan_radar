@@ -1,9 +1,0 @@
-dset ^201705281030.dat 
-undef -999.9
-xdef 2560 LINEAR 118.006250 0.012500
-ydef 3360 LINEAR 20.004167 0.008333
-zdef 1  LEVELS 1000
-tdef 1  LINEAR 10:30Z28May2017 10mn
-vars 1
-rr 0 0 rainfall
-endvars
